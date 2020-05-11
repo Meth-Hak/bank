@@ -61,6 +61,13 @@ void AccMake() //계좌 계설
 
 void Deposit() //입금
 {
+
+	if (Count == 0)
+	{
+		cout << "계설된 계좌가 없습니다." << endl;
+		return;
+	}
+
 	int ID = 0;
 	int money = 0;
 
@@ -88,6 +95,13 @@ void Deposit() //입금
 
 void Withdrawal() //출금
 {
+
+	if (Count == 0)
+	{
+		cout << "계설된 계좌가 없습니다." << endl;
+		return;
+	}
+
 	int ID = 0;
 	int money = 0;
 
@@ -112,6 +126,13 @@ void Withdrawal() //출금
 
 void AllPrint()//계좌 전체 보기
 {
+
+	if (Count == 0)
+	{
+		cout << "계설된 계좌가 없습니다." << endl;
+		return;
+	}
+
 	for (int i = 0; i < Count; i++)
 	{
 		cout << "[" << i << "]" << "번째" << endl;
